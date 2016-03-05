@@ -7,9 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AFNetworking/AFNetworking.h>
+#import "AFHTTPSessionManager.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import "NetworkClient.h"
+#import "Meaning.h"
+#import "Acronym.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *acronymTF;
+@property (weak, nonatomic) IBOutlet UIButton *searchBtn;
+@property (weak, nonatomic) IBOutlet UITableView *acronymTableView;
+@property (weak, nonatomic) IBOutlet UIView *noResultsBgView;
+@property (weak, nonatomic) IBOutlet UILabel *noResultsLbl;
+
+@property (weak, nonatomic) IBOutlet UIView *acronymBgView;
+
+- (IBAction)searchAcronym:(id)sender;
 
 @end
 

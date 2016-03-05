@@ -15,6 +15,10 @@
 		61873F421C8A763E00794A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61873F401C8A763E00794A9A /* LaunchScreen.storyboard */; };
 		61873F4D1C8A763E00794A9A /* SearchAcronymTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F4C1C8A763E00794A9A /* SearchAcronymTests.m */; };
 		61873F581C8A763E00794A9A /* SearchAcronymUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F571C8A763E00794A9A /* SearchAcronymUITests.m */; };
+		61873F691C8AD19C00794A9A /* NetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F681C8AD19C00794A9A /* NetworkClient.m */; };
+		61873F6C1C8AD20D00794A9A /* Meaning.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F6B1C8AD20D00794A9A /* Meaning.m */; };
+		61873F6F1C8AD4BB00794A9A /* Acronym.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F6E1C8AD4BB00794A9A /* Acronym.m */; };
+		64C3AFD156665DD05DA2FAE1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99663BB9F6104B8FD59DBF35 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		61873F2F1C8A763E00794A9A /* SearchAcronym.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchAcronym.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A0BDE55517CBADA9A056B0C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		61873F2F1C8A763E00794A9A /* AcronymSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcronymSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61873F331C8A763E00794A9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61873F351C8A763E00794A9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		61873F361C8A763E00794A9A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +56,15 @@
 		61873F531C8A763E00794A9A /* SearchAcronymUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SearchAcronymUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61873F571C8A763E00794A9A /* SearchAcronymUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchAcronymUITests.m; sourceTree = "<group>"; };
 		61873F591C8A763E00794A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		61873F671C8AD19C00794A9A /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		61873F681C8AD19C00794A9A /* NetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkClient.m; sourceTree = "<group>"; };
+		61873F6A1C8AD20D00794A9A /* Meaning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Meaning.h; sourceTree = "<group>"; };
+		61873F6B1C8AD20D00794A9A /* Meaning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Meaning.m; sourceTree = "<group>"; };
+		61873F6D1C8AD4BB00794A9A /* Acronym.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Acronym.h; sourceTree = "<group>"; };
+		61873F6E1C8AD4BB00794A9A /* Acronym.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Acronym.m; sourceTree = "<group>"; };
+		61873F711C8AD79C00794A9A /* Constants.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.pch; sourceTree = "<group>"; };
+		99663BB9F6104B8FD59DBF35 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D23EE2F0B23BEBAE9A02F53E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64C3AFD156665DD05DA2FAE1 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +93,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F2043C3802451385C0105F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1A0BDE55517CBADA9A056B0C /* Pods.debug.xcconfig */,
+				D23EE2F0B23BEBAE9A02F53E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		61873F261C8A763E00794A9A = {
 			isa = PBXGroup;
 			children = (
@@ -85,13 +109,15 @@
 				61873F4B1C8A763E00794A9A /* SearchAcronymTests */,
 				61873F561C8A763E00794A9A /* SearchAcronymUITests */,
 				61873F301C8A763E00794A9A /* Products */,
+				0F2043C3802451385C0105F5 /* Pods */,
+				788AC636F04BD31F8A50DC33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		61873F301C8A763E00794A9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61873F2F1C8A763E00794A9A /* SearchAcronym.app */,
+				61873F2F1C8A763E00794A9A /* AcronymSearch.app */,
 				61873F481C8A763E00794A9A /* SearchAcronymTests.xctest */,
 				61873F531C8A763E00794A9A /* SearchAcronymUITests.xctest */,
 			);
@@ -103,13 +129,15 @@
 			children = (
 				61873F351C8A763E00794A9A /* AppDelegate.h */,
 				61873F361C8A763E00794A9A /* AppDelegate.m */,
-				61873F381C8A763E00794A9A /* ViewController.h */,
-				61873F391C8A763E00794A9A /* ViewController.m */,
 				61873F3B1C8A763E00794A9A /* Main.storyboard */,
+				61873F701C8AD76600794A9A /* Controller */,
+				61873F661C8AD13E00794A9A /* Network */,
+				61873F651C8AD03C00794A9A /* Models */,
 				61873F3E1C8A763E00794A9A /* Assets.xcassets */,
 				61873F401C8A763E00794A9A /* LaunchScreen.storyboard */,
 				61873F431C8A763E00794A9A /* Info.plist */,
 				61873F321C8A763E00794A9A /* Supporting Files */,
+				61873F711C8AD79C00794A9A /* Constants.pch */,
 			);
 			path = SearchAcronym;
 			sourceTree = "<group>";
@@ -140,6 +168,43 @@
 			path = SearchAcronymUITests;
 			sourceTree = "<group>";
 		};
+		61873F651C8AD03C00794A9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61873F6A1C8AD20D00794A9A /* Meaning.h */,
+				61873F6B1C8AD20D00794A9A /* Meaning.m */,
+				61873F6D1C8AD4BB00794A9A /* Acronym.h */,
+				61873F6E1C8AD4BB00794A9A /* Acronym.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		61873F661C8AD13E00794A9A /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				61873F671C8AD19C00794A9A /* NetworkClient.h */,
+				61873F681C8AD19C00794A9A /* NetworkClient.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		61873F701C8AD76600794A9A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				61873F381C8A763E00794A9A /* ViewController.h */,
+				61873F391C8A763E00794A9A /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		788AC636F04BD31F8A50DC33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99663BB9F6104B8FD59DBF35 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +212,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 61873F5C1C8A763E00794A9A /* Build configuration list for PBXNativeTarget "SearchAcronym" */;
 			buildPhases = (
+				4D45C0D3FD648C36E4A4ED73 /* Check Pods Manifest.lock */,
 				61873F2B1C8A763E00794A9A /* Sources */,
 				61873F2C1C8A763E00794A9A /* Frameworks */,
 				61873F2D1C8A763E00794A9A /* Resources */,
+				FD8F66E804DFACF52CCEA438 /* Embed Pods Frameworks */,
+				CD4FACA6593D1DD669D59E6E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,7 +225,7 @@
 			);
 			name = SearchAcronym;
 			productName = SearchAcronym;
-			productReference = 61873F2F1C8A763E00794A9A /* SearchAcronym.app */;
+			productReference = 61873F2F1C8A763E00794A9A /* AcronymSearch.app */;
 			productType = "com.apple.product-type.application";
 		};
 		61873F471C8A763E00794A9A /* SearchAcronymTests */ = {
@@ -265,6 +333,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4D45C0D3FD648C36E4A4ED73 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4FACA6593D1DD669D59E6E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD8F66E804DFACF52CCEA438 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		61873F2B1C8A763E00794A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -273,6 +389,9 @@
 				61873F3A1C8A763E00794A9A /* ViewController.m in Sources */,
 				61873F371C8A763E00794A9A /* AppDelegate.m in Sources */,
 				61873F341C8A763E00794A9A /* main.m in Sources */,
+				61873F6F1C8AD4BB00794A9A /* Acronym.m in Sources */,
+				61873F6C1C8AD20D00794A9A /* Meaning.m in Sources */,
+				61873F691C8AD19C00794A9A /* NetworkClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,23 +530,29 @@
 		};
 		61873F5D1C8A763E00794A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A0BDE55517CBADA9A056B0C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SearchAcronym/Constants.pch;
 				INFOPLIST_FILE = SearchAcronym/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chaitanya.macys.SearchAcronym;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AcronymSearch;
 			};
 			name = Debug;
 		};
 		61873F5E1C8A763E00794A9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D23EE2F0B23BEBAE9A02F53E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = SearchAcronym/Constants.pch;
 				INFOPLIST_FILE = SearchAcronym/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chaitanya.macys.SearchAcronym;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = AcronymSearch;
 			};
 			name = Release;
 		};
@@ -498,6 +623,7 @@
 				61873F5E1C8A763E00794A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61873F5F1C8A763E00794A9A /* Build configuration list for PBXNativeTarget "SearchAcronymTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +632,7 @@
 				61873F611C8A763E00794A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61873F621C8A763E00794A9A /* Build configuration list for PBXNativeTarget "SearchAcronymUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +641,7 @@
 				61873F641C8A763E00794A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

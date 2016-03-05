@@ -1,0 +1,14 @@
+//
+//  Constants.pch
+//  SearchAcronym
+//
+//  Created by Chaitanya Kumar on 3/5/16.
+//  Copyright © 2016 Chaitanya Kumar. All rights reserved.
+//
+
+#ifndef Constants_pch
+#define Constants_pch
+
+    #define URL @"http://www.nactem.ac.uk/software/acromine/dictionary.py?"
+
+#endif /* Constants_pch */
