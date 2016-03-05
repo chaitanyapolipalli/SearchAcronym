@@ -10,6 +10,7 @@
 #import <AFNetworking/AFNetworking.h>
 #import "AFHTTPSessionManager.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import "UIView+RoundCorners.h"
 #import "NetworkClient.h"
 #import "Meaning.h"
 #import "Acronym.h"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6184063E1C8B904200F12D98 /* UIView+RoundCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = 6184063D1C8B904200F12D98 /* UIView+RoundCorners.m */; };
 		61873F341C8A763E00794A9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F331C8A763E00794A9A /* main.m */; };
 		61873F371C8A763E00794A9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F361C8A763E00794A9A /* AppDelegate.m */; };
 		61873F3A1C8A763E00794A9A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61873F391C8A763E00794A9A /* ViewController.m */; };
@@ -40,6 +41,8 @@
 
 /* Begin PBXFileReference section */
 		1A0BDE55517CBADA9A056B0C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6184063C1C8B904200F12D98 /* UIView+RoundCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+RoundCorners.h"; sourceTree = "<group>"; };
+		6184063D1C8B904200F12D98 /* UIView+RoundCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+RoundCorners.m"; sourceTree = "<group>"; };
 		61873F2F1C8A763E00794A9A /* AcronymSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AcronymSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61873F331C8A763E00794A9A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		61873F351C8A763E00794A9A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -175,6 +178,8 @@
 				61873F6B1C8AD20D00794A9A /* Meaning.m */,
 				61873F6D1C8AD4BB00794A9A /* Acronym.h */,
 				61873F6E1C8AD4BB00794A9A /* Acronym.m */,
+				6184063C1C8B904200F12D98 /* UIView+RoundCorners.h */,
+				6184063D1C8B904200F12D98 /* UIView+RoundCorners.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -391,6 +396,7 @@
 				61873F341C8A763E00794A9A /* main.m in Sources */,
 				61873F6F1C8AD4BB00794A9A /* Acronym.m in Sources */,
 				61873F6C1C8AD20D00794A9A /* Meaning.m in Sources */,
+				6184063E1C8B904200F12D98 /* UIView+RoundCorners.m in Sources */,
 				61873F691C8AD19C00794A9A /* NetworkClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

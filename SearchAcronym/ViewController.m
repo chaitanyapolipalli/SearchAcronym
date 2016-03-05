@@ -20,6 +20,10 @@
     self.acronymTableView.delegate = self;
     self.acronymTableView.dataSource = self;
     self.acronymTF.delegate = self;
+    self.searchBtn.imageView.contentMode = UIViewContentModeScaleAspectFit;
+    [_searchBtn addRoundedCorners:UIRectCornerTopRight | UIRectCornerBottomRight
+                                                    withRadii:CGSizeMake(10.0f, 10.0f)];
+    self.acronymBgView.layer.cornerRadius = 10;
     [self.acronymTF becomeFirstResponder];
 }
 
@@ -56,7 +60,7 @@
                             failure:^(NSURLSessionDataTask *task, NSError *error) {
                                 [MBProgressHUD hideHUDForView:self.view animated:YES];
                                 [self.acronymTableView setHidden:YES];
-                                self.noResultsLbl.text = [NSString stringWithFormat:@"There's is an error in searching for the acronym. Error: %@", error.localizedDescription];
+                                self.noResultsLbl.text = [NSString stringWithFormat:@"There's is an error in searching for the acronym. \nError: %@", error.localizedDescription];
                                 
                             }];
  }
@@ -90,8 +94,9 @@
             if (self.acronymTF.text.length != 0) {
                 NSString * searchStr = [textField.text stringByReplacingCharactersInRange:range withString:string];
                 [self searchForAcronym:searchStr];
-                [self.acronymTableView reloadData];
             }
+                
+            [self.acronymTableView reloadData];
         });
     });
     return YES;
